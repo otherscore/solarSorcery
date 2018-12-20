@@ -1,0 +1,60 @@
+Okay so something I learned
+
+File structure
+
+	The top level solarSorcery/ directory is where things like README's, TODO's,
+		and other general things go
+
+	The project/ directory is the actual modding workspace
+		It is setup for eclipse, just import it as a project folder and it will work
+		Most of the files in here are for gradle, some kinda of project manager
+			I think it is kinda like Make, but java based so it works on all platforms
+			Ignore most of it
+			Excpet build.gradle
+				In here is 3 lines 2 to worry about
+				         version - version number for the mod
+				           group - the package for the mod
+				archivesBaseName - the mod name
+		The actual mod src is under src/main/java/
+			I have no clue how to change that location
+			It works so just use it
+			The package name is the next directory
+				In this case 'solarSorcery'
+				This is what goes under the 'group' line in build.gradle
+		The built mod is under build/libs/
+			It is the jar file without the sources tag
+				I do not know what that one is for the post I read said to just
+					ingore it
+		
+Setup Instructions
+
+	So, this is where it gets tricky. I built it on linux, and don't know how it works on windows
+	I will detail what I did, and it should match up
+
+	Download gradle
+		Linux   - sudo apt install gradle
+		Windows - instructions at https://gradle.org/install
+
+	I think this should cover the setup. The actual workspace is already set up but if you run in
+	to issues. Contact me
+
+	Additionall the instructions I followed were at https://mcforge.readthedocs.io
+
+Build Instructions
+
+	This is pretty simple
+	
+	First install minecraft forge from files.minecraftforge.com
+	Set up a testing profile where ever you want
+	Run the profile once to generate the forge files
+
+	Next go to the projects/ directory in a cli
+		Linux   - ./gradlew build
+		Windows - gradlew.bat build
+	This generate the mod jar file in projects/build/libs/
+
+	Copy the jar file to the mods folder of the test profile
+	Run the profile
+
+Okay that about covers it. Complete instructions for now, unless we have to do more complicated stuff
+There is a lot gradle can do, and a lot tools avaiable, but to get us started this is enough
