@@ -1,0 +1,11 @@
+Symbol range map extraction starting
+Processing 1 files
+startProcessing "solarSorcery/solarSorcery.java" md5: 40809c23b1adb1b6bdecd96a26aa123c
+@|solarSorcery/solarSorcery.java|8|20|solarSorcery|package|solarSorcery|(file)
+Class Start: solarSorcery.solarSorcery
+   @|solarSorcery/solarSorcery.java|67|70|Mod|class|net.minecraftforge.fml.common.Mod
+   @|solarSorcery/solarSorcery.java|71|76|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|solarSorcery/solarSorcery.java|108|120|solarSorcery|class|solarSorcery.solarSorcery
+Class End  : solarSorcery.solarSorcery
+endProcessing "solarSorcery/solarSorcery.java"
+
